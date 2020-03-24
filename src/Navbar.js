@@ -15,7 +15,6 @@ class Navbar extends Component {
       format: "hex",
       open: false
     };
-    this.wrapper = React.createRef();
     this.handleFormatChange = this.handleFormatChange.bind(this);
     this.closeSnackbar = this.closeSnackbar.bind(this);
   }
@@ -40,7 +39,7 @@ class Navbar extends Component {
         </div>
         <div className="slider-container">
           <span>Level: { level }</span>
-          <div ref={ this.wrapper } className="slider">
+          <div className="slider">
             <Slider
               defaultValue={ level }
               min={ 100 }

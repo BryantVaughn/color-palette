@@ -56,7 +56,7 @@ class Navbar extends Component {
                   boxShadow: "none",
                   width: "13px",
                   height: "13px",
-                  marginLeft: "-7px", 
+                  marginLeft: "-1px", 
                   marginTop: "-3px"
                 }}
                 railStyle={{ height: 8 }}

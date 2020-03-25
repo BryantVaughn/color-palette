@@ -22,12 +22,11 @@ export default {
     "& a": {
       color: "white",
       fontWeight: "bold",
-      textDecoration: "none",
       fontSize: "20px"
     },
     "& a:hover": {
       transition: "0.2s ease-in-out",
-      color: "rgb(93,97,94)"
+      color: "rgb(109,113,110)"
     }
   },
   palettes: {

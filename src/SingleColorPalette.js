@@ -44,9 +44,9 @@ class SingleColorPalette extends Component {
         showingFullPalette={ false }
       />
     ));
-
+    
     return (
-      <div className={ classes. palette }>
+      <div className={ classes.palette }>
         <Navbar
           handleChange={ this.changeFormat }
           showingAllColors={ false }

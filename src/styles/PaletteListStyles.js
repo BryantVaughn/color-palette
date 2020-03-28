@@ -19,15 +19,19 @@ export default {
     justifyContent: "space-between",
     color: "white",
     alignItems: "center",
+    "& button": {
+      cursor: "pointer",
+      backgroundColor: "gray",
+      border: "none",
+      padding: "8px 30px",
+      borderRadius: "6px",
+    },
     "& a": {
       color: "white",
+      textDecoration: "none",
       fontWeight: "bold",
       fontSize: "20px"
     },
-    "& a:hover": {
-      transition: "0.2s ease-in-out",
-      color: "rgb(109,113,110)"
-    }
   },
   palettes: {
     boxSizing: "border-box",
@@ -37,3 +41,13 @@ export default {
     gridGap: "5%"
   }
 };
+
+// "& a": {
+//   color: "white",
+//   fontWeight: "bold",
+//   fontSize: "20px"
+// },
+// "& a:hover": {
+//   transition: "0.2s ease-in-out",
+//   color: "rgb(109,113,110)"
+// }

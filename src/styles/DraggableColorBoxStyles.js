@@ -7,6 +7,7 @@ const styles = {
     position: "relative",
     cursor: "pointer",
     marginBottom: "-3.5px",
+    overflow: "hidden",
     "&:hover svg": {
       color: "white",
       transform: "scale(1.5)"

@@ -59,7 +59,7 @@ export default {
     width: "100%",
     left: "0px",
     bottom: "0px",
-    color: "black",
+    color: "rgba(0,0,0,0.5)",
     letterSpacing: "1px",
     textTransform: "uppercase",
     fontSize: "12px"

@@ -1,12 +1,19 @@
 import sizes from './sizes';
+import background from './background.svg';
 
 export default {
   root: {
-    backgroundColor: "blue",
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
-    justifyContent: "center"
+    justifyContent: "center",
+    /* background by SVGBackgrounds.com */
+    backgroundColor: "#1c5fdb",
+    backgroundImage: `url(${ background })`,
+    overflow: "scroll"
+  },
+  heading: {
+    fontSize: "2rem"
   },
   container: {
     width: "50%",
@@ -33,19 +40,12 @@ export default {
     justifyContent: "space-between",
     color: "white",
     alignItems: "center",
-    "& button": {
-      cursor: "pointer",
-      backgroundColor: "gray",
-      border: "none",
-      padding: "8px 30px",
-      borderRadius: "6px",
-    },
     "& a": {
       color: "white",
       fontWeight: "bold",
       fontSize: "16px",
       cursor: "pointer",
-
+      // marginRight: "12px"
     },
   },
   palettes: {
@@ -63,13 +63,3 @@ export default {
     }
   }
 };
-
-// "& a": {
-//   color: "white",
-//   fontWeight: "bold",
-//   fontSize: "20px"
-// },
-// "& a:hover": {
-//   transition: "0.2s ease-in-out",
-//   color: "rgb(109,113,110)"
-// }

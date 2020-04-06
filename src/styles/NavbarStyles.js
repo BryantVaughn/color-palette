@@ -21,7 +21,14 @@ export default {
       color: "black"
     },
     [sizes.down("xs")]: {
-      display: "none"
+      marginRight: "10px",
+      fontSize: "18px"
+    }
+  },
+  sliderDiv: {
+    [sizes.down("xs")]: {
+      flexDirection: "row",
+      textAlign: "center"
     }
   },
   slider: {
@@ -29,7 +36,7 @@ export default {
     margin: "0 10px",
     display: "inline-block",
     [sizes.down("sm")]: {
-      width: "150px"
+      width: "150px",
     }
   },
   selectContainer: {

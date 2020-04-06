@@ -7,8 +7,8 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import { withStyles } from '@material-ui/styles';
 import Slider from 'rc-slider';
-import styles from './styles/NavbarStyles';
 import 'rc-slider/assets/index.css';
+import styles from './styles/NavbarStyles';
 
 class Navbar extends Component {
   constructor(props) {
@@ -40,7 +40,7 @@ class Navbar extends Component {
           <Link to="/">reactcolorpicker</Link>
         </div>
         { showingAllColors && (
-          <div>
+          <div className={ classes.sliderDiv }>
             <span>Level: { level }</span>
             <div className={ classes.slider }>
               <Slider

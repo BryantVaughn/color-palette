@@ -7,9 +7,11 @@
 
 # testing
 /coverage
+/colors_app/coverage
 
 # production
 /build
+/colors_app/build
 
 # misc
 .DS_Store

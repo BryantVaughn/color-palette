@@ -28,13 +28,22 @@ export default {
     }
   },
   copyText: {
-    color: props => chroma(props.background).luminance() >= 0.68 ? "black" : "white"
+    color: props =>
+      chroma(props.background).luminance() >= 0.68
+        ? "rgba(0,0,0,0.5)"
+        : "rgba(255,255,255,0.8)"
   },
   colorName: {
-    color: props => chroma(props.background).luminance() <= 0.19 ? "white" : "rgba(0,0,0,0.5)"
+    color: props =>
+      chroma(props.background).luminance() <= 0.19
+        ? "rgba(255,255,255,0.8)"
+        : "rgba(0,0,0,0.5)"
   },
   seeMore: {
-    color: props => chroma(props.background).luminance() >= 0.68 ? "rgba(0,0,0,0.5)" : "white",
+    color: props => 
+      chroma(props.background).luminance() >= 0.68
+        ? "rgba(0,0,0,0.5)"
+        : "rgba(255,255,255,0.8)",
     background: "rgba(255, 255, 255, 0.3)",
     position: "absolute",
     border: "none",

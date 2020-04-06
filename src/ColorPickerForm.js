@@ -15,14 +15,14 @@ class ColorPickerForm extends Component {
   }
 
   componentDidMount = () => {
-    ValidatorForm.addValidationRule("isColorNameUnique", (value) => 
+    ValidatorForm.addValidationRule("isColorNameUnique", value => 
       this.props.colors.every(
         ({ name }) => name.toLowerCase() !== value.toLowerCase()
       )
     );
-    ValidatorForm.addValidationRule("isColorUnique", (value) => 
+    ValidatorForm.addValidationRule("isColorUnique", value => 
       this.props.colors.every(
-        ({ color }) => color !== value.currentColor
+        ({ color }) => color !== this.state.currentColor
       )
     );
   };

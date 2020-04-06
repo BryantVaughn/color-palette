@@ -63,6 +63,7 @@ class NewPaletteForm extends Component {
       rand = Math.floor(Math.random() * allColors.length);
       randomColor = allColors[rand];
       isDuplicateColor = this.state.colors.some(
+        // eslint-disable-next-line
         color => color.name.toLowerCase() === randomColor.name.toLowerCase()
       );
     }

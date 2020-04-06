@@ -1,3 +1,4 @@
+import chroma from 'chroma-js';
 import sizes from './sizes';
 
 const styles = {
@@ -29,13 +30,17 @@ const styles = {
   },
   boxContent: {
     position: "absolute",
-    width: "100%",
+    width: "95%",
     left: "0px",
     bottom: "0px",
-    padding: "10px",
-    color: "rgba(0,0,0,0.5)",
+    color: props => 
+      chroma(props.color).luminance() <= 0.08
+        ? "rgba(255,255,255,0.8)"
+        : "rgba(0,0,0,0.5)",
     letterSpacing: "1px",
     textTransform: "uppercase",
+    padding: "10px",
+    marginRight: "10px",
     fontSize: "12px",
     display: "flex",
     justifyContent: "space-between"

@@ -21,15 +21,22 @@ export default {
       color: "black"
     },
     [sizes.down("xs")]: {
-      display: "none"
+      marginRight: "10px",
+      fontSize: "18px"
+    }
+  },
+  sliderDiv: {
+    [sizes.down("xs")]: {
+      flexDirection: "row",
+      textAlign: "center"
     }
   },
   slider: {
     width: "340px",
     margin: "0 10px",
     display: "inline-block",
-    [sizes.down("md")]: {
-      width: "150px"
+    [sizes.down("sm")]: {
+      width: "150px",
     }
   },
   selectContainer: {

@@ -44,14 +44,14 @@ class App extends Component {
   render() {
     return (
       <Route
-        render={ (location) => (
+        render={({ location }) => (
           <TransitionGroup>
             <CSSTransition
               key={ location.key }
               classNames="page"
               timeout={ 500 }
             >
-              <Switch location={ location.key }>
+              <Switch location={ location }>
                 <Route
                   exact
                   path="/palette/new"
